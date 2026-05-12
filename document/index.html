@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>支出管理アプリ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>支出管理アプリ</h1>
+
+    <div class="form-card">
+      <div class="form-row">
+        <input type="number" id="amount-input" placeholder="金額（円）" min="1">
+        <input type="text" id="desc-input" placeholder="内容（例：ランチ）" maxlength="50">
+      </div>
+      <div class="form-row">
+        <select id="category-select"></select>
+        <input type="date" id="date-input">
+        <button id="add-btn">追加</button>
+      </div>
+    </div>
+
+    <div class="filter-area">
+      <label for="filter-select">カテゴリで絞り込み：</label>
+      <select id="filter-select">
+        <option value="all">すべて</option>
+      </select>
+    </div>
+
+    <div class="summary-bar">
+      <span>合計金額</span>
+      <span id="total-amount">¥0</span>
+    </div>
+
+    <ul id="expense-list"></ul>
+  </div>
+
+  <script src="src/storage.js"></script>
+  <script src="src/utils.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>

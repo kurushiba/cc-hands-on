@@ -1,0 +1,12 @@
+{
+  "name": "bug-fix-hands-on",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^30.0.0"
+  }
+}

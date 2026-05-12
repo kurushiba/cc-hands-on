@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+}
+
+.form-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.form-row:last-child {
+  margin-bottom: 0;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="date"],
+select {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #333;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #4a90e2;
+}
+
+input[type="number"] {
+  flex: 0 0 120px;
+}
+
+input[type="date"] {
+  flex: 0 0 150px;
+}
+
+#add-btn {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+#add-btn:hover {
+  background-color: #357abd;
+}
+
+.filter-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.filter-area label {
+  font-size: 0.9rem;
+  color: #666;
+  white-space: nowrap;
+}
+
+.filter-area select {
+  flex: 0 0 140px;
+}
+
+.summary-bar {
+  background: #fff;
+  border-radius: 10px;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+#total-amount {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #4a90e2;
+}
+
+#expense-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.expense-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  animation: fadeIn 0.2s ease;
+}
+
+.category-badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 12px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.cat-食費     { background: #fff3cd; color: #856404; }
+.cat-交通費   { background: #cfe2ff; color: #084298; }
+.cat-娯楽     { background: #f8d7da; color: #842029; }
+.cat-日用品   { background: #d1e7dd; color: #0f5132; }
+.cat-医療     { background: #e2d9f3; color: #432874; }
+.cat-その他   { background: #e2e3e5; color: #41464b; }
+
+.expense-desc {
+  flex: 1;
+  font-size: 0.95rem;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.expense-date {
+  font-size: 0.85rem;
+  color: #999;
+  flex-shrink: 0;
+}
+
+.expense-amount {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  flex-shrink: 0;
+  min-width: 80px;
+  text-align: right;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #bbb;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+
+.delete-btn:hover {
+  color: #e55;
+}
+
+.empty-message {
+  text-align: center;
+  color: #aaa;
+  font-size: 0.95rem;
+  padding: 32px 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

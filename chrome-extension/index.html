@@ -1,44 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>タスクダッシュボード</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>タスクダッシュボード</h1>
-
-    <div class="stats-bar">
-      <div class="stat-card">
-        <span class="stat-label">総タスク数</span>
-        <span class="stat-value" id="total-count">0</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-label">完了</span>
-        <span class="stat-value done" id="done-count">0</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-label">未完了</span>
-        <span class="stat-value pending" id="pending-count">0</span>
-      </div>
-    </div>
-
-    <div class="form-card">
-      <input type="text" id="task-input" placeholder="新しいタスクを入力してください" maxlength="60">
-      <button id="add-btn">追加</button>
-    </div>
-
-    <div class="filter-area">
-      <button class="filter-btn active" data-filter="all">すべて</button>
-      <button class="filter-btn" data-filter="pending">未完了</button>
-      <button class="filter-btn" data-filter="done">完了済み</button>
-    </div>
-
-    <ul id="task-list"></ul>
-  </div>
-
-  <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ユーザーディレクトリ</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

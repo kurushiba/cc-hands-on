@@ -10,8 +10,7 @@
 以下の手順で進めてください。
 
 1. 添付画像を分析し、レイアウト・配色・フォントサイズ・余白などのデザインを把握する
-2. `src/pages/Home.jsx` と `src/pages/Home.css` を作成して画像のUIを実装する
-   - データは `src/data/users.js` の USERS を使うこと
+2. `src/pages/Home.jsx` と `src/pages/Home.css` を作成して画像のUIを全く新しいページとして実装する
    - `src/App.jsx` を修正して `<Home />` が表示されるようにすること
 3. @browser で http://localhost:5173 のスクリーンショットを撮影する
 4. 撮影したスクリーンショットと添付画像を見比べ、差異（レイアウト・色・サイズ・余白など）を具体的にリストアップする

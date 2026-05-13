@@ -11,7 +11,6 @@ export const USERS = [
     name: 'Kenji Nakamura',
     email: 'kenji@example.com',
     department: 'Design',
-    // address フィールドが意図的に欠落
   },
   {
     id: 3,

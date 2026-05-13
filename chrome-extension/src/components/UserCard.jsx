@@ -1,6 +1,5 @@
 function UserCard({ user }) {
-  // Bug 2: user.address が undefined のユーザーで TypeError が発生する
-  const city = user.address.city
+  const city = user.address.city;
 
   return (
     <li className="user-card">
@@ -9,7 +8,7 @@ function UserCard({ user }) {
       <p className="user-department">{user.department}</p>
       <p className="user-city">{city}</p>
     </li>
-  )
+  );
 }
 
-export default UserCard
+export default UserCard;
